@@ -1,24 +1,18 @@
-name: 'RegEx Issue Labeler'
-description: 'Labels issues automagically based on their body'
-author: 'GitHub'
+name: 'Associative RegEx Issue and PR Labeler'
+description: "Labels issues, potentially based on a merged PR, automagically based on their title and body."
+author: 'Spartan322'
 inputs:
   repo-token:
     description: 'The GITHUB_TOKEN secret'
     required: true
-  configuration-path:
-    description: 'Path to the labeler.yml configuration file'
-    required: true
-  enable-versioned-regex:
-    description: 'Controls if versioned regex templates are being used'
-    required: true
-  versioned-regex:
-    description: 'The regex version number to use. Only required if using versioned regex files'
+  title-regex:
+    description: 'Is optional if body-regex is defined and the regex to apply to the title.'
     required: false
-  not-before:
-    description: 'Is optional and will result in any issues prior to this timestamp to be ignored'
+  body-regex:
+    description: 'Is optional if title-regex is defined and the regex to apply to the body.'
     required: false
-  body-missing-regex-label:
-    description: 'The name of the label that should be added to an issue where the specified `version-regex` can not be found.'
+  find-issue-in-regex:
+    description: 'Is optional and determines if it will evaluate issues to label within the selected regex.'
     required: false
 runs:
   using: 'node12'

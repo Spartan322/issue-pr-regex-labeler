@@ -1,5 +1,5 @@
 {
-  "name": "issue-labeler",
+  "name": " issue-pr-regex-labeler",
   "version": "1.0.0",
   "description": "",
   "main": "lib/main.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github/issue-labeler.git"
+    "url": "git+https://github.com/spartan322/issue-pr-regex-labeler.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/github/issue-labeler/issues"
+    "url": "https://github.com/spartan322/issue-pr-regex-labeler/issues"
   },
-  "homepage": "https://github.com/github/issue-labeler#readme",
+  "homepage": "https://github.com/spartan322/issue-pr-regex-labeler#readme",
   "dependencies": {
     "@actions/core": "^1.2.1",
     "@actions/github": "^2.0.1",
